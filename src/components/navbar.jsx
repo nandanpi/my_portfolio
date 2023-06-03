@@ -10,7 +10,7 @@ const Navbar = () => {
     }
     return (
         <>
-        <div className="dark:bg-black bg-white  border-b-2 border-b-gray-400 dark:border-b-gray-400 border-opacity-50 ">
+        <div className="dark:bg-black bg-white  border-b border-gray-400 dark:border-gray-400 ">
             <div className="hidden md:flex justify-evenly">
                 <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpi</a></h1></div>
                 <div className="justify-center">
