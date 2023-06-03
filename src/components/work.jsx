@@ -25,7 +25,7 @@ const Work = () => {
                     </div>
                 </div>
                 <div className="block md:hidden">
-                    <p className="text-center text-xl text-black dark:text-white font-bold  ">Student and Web Developer.</p>
+                    <p className="text-center text-xl text-black dark:text-white font-bold  ">A Student and Web Developer.</p>
                 </div>
                 <div className=" justify-center items-center text-center font-bold text-gray-600 dark:text-white flex md:hidden m-3">
                     <p className="text-sm max-w-xl ">Pursuing a B.Tech in AI&ML at NMAMIT | <a href="https://drive.google.com/file/d/12OX3JI-_dWm8LSoqs2CV-sXlUh1Q24Dh/view?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</a></p>
