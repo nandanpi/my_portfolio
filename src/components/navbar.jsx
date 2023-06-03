@@ -12,7 +12,7 @@ const Navbar = () => {
         <>
         <div className="dark:bg-black bg-white  border-b border-gray-400 dark:border-gray-400 shadow-xl">
             <div className="hidden md:flex justify-evenly">
-                <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpi</a></h1></div>
+                <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpai</a></h1></div>
                 <div className="justify-center">
                     <ul className="text-black dark:text-white flex text-xl font-bold space-x-6 p-4">
                         <li><a href="/">Work</a></li>
@@ -31,7 +31,7 @@ const Navbar = () => {
                                 {!nav ? <AiOutlineClose className="text-black dark:text-white" size={30}/>:<AiOutlineMenu className="text-black dark:text-white" size={30} />}
                             </div>
                         </div>
-                        <div><h1 className="text-black dark:text-white font-bold text-2xl  flex md:hidden p-3"><a href="/">nandanpi</a></h1></div>
+                        <div><h1 className="text-black dark:text-white font-bold text-2xl  flex md:hidden p-3"><a href="/">nandanpai</a></h1></div>
                         <div className=" md:hidden flex p-4"><Switcher /></div>
                     </div>
                     <div className={!nav ? "block p-2" : "hidden" }>
