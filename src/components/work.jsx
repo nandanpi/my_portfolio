@@ -7,7 +7,7 @@ const Work = () => {
                     <div className="flex justify-center items-center mt-20">
                         <h1 className="
                         text-black dark:text-white inline-block text-8xl type2 space-x-1 border-r-[5px] border-r-black dark:border-r-white">
-                            <span>Hey. I'm</span><span className=" text-orange-600 font-bold"> Nandan Pai.</span></h1>
+                            <span>Hey! I'm</span><span className=" text-orange-600 font-bold"> Nandan Pai.</span></h1>
                     </div>
                 </div>
                 <div className="hidden md:block">
@@ -21,7 +21,7 @@ const Work = () => {
                 <div className="justify-center flex md:hidden">
                     <div className="flex justify-center items-center mt-20">
                         <h1 className=" text-black dark:text-white inline-block text-4xl type2 space-x-1 border-r-[5px] border-r-black dark:border-r-white">
-                            <span>Hey. I'm</span><span className=" text-orange-600"> Nandan Pai.</span></h1>
+                            <span>Hey! I'm</span><span className=" text-orange-600"> Nandan Pai.</span></h1>
                     </div>
                 </div>
                 <div className="block md:hidden">
