@@ -34,7 +34,7 @@ const Navbar = () => {
                         <div><h1 className="text-black dark:text-white font-bold text-2xl  flex md:hidden p-3"><a href="/">nandanpi</a></h1></div>
                         <div className=" md:hidden flex p-4"><Switcher /></div>
                     </div>
-                    <div className={!nav ? "block" : "hidden" }>
+                    <div className={!nav ? "block p-2" : "hidden" }>
                         <div className="m-2 border-2 rounded-xl">
                             <ul className="text-black dark:text-white capitalize p-3 text-center space-y-4">
                                 <li><a href="/">Work</a></li>
