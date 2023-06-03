@@ -36,7 +36,7 @@ const Navbar = () => {
                     </div>
                     <div className={!nav ? "block p-2" : "hidden" }>
                         <div className="m-2 border-2 rounded-xl">
-                            <ul className="text-black dark:text-white capitalize p-3 text-center space-y-4">
+                            <ul className="text-black dark:text-white p-3 text-center space-y-4 text-xl ">
                                 <li><a href="/">Work</a></li>
                                 <li><a href="/timeline">Timeline</a></li>
                                 <li><a href="/contact">Contact</a></li>
