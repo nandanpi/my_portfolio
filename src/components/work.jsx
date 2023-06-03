@@ -14,7 +14,7 @@ const Work = () => {
                     <p className="text-center text-3xl text-black dark:text-white font-bold  ">Student and Web Developer.</p>
                 </div>
                 <div className="hidden justify-center items-center text-center font-bold text-gray-600 dark:text-white md:flex">
-                    <p className="text-xl max-w-xl">Pursuing a B.Tech in AI&ML at NMAMIT | <a href="https://drive.google.com/file/d/12OX3JI-_dWm8LSoqs2CV-sXlUh1Q24Dh/view?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</a></p>
+                    <p className="text-xl max-w-xl mb-10">Pursuing a B.Tech in AI&ML at NMAMIT | <a href="https://drive.google.com/file/d/12OX3JI-_dWm8LSoqs2CV-sXlUh1Q24Dh/view?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</a></p>
                 </div>
             </div>
             <div>
@@ -28,11 +28,11 @@ const Work = () => {
                     <p className="text-center text-xl text-black dark:text-white font-bold  ">Student and Web Developer.</p>
                 </div>
                 <div className=" justify-center items-center text-center font-bold text-gray-600 dark:text-white flex md:hidden m-3">
-                    <p className="text-sm max-w-xl">Pursuing a B.Tech in AI&ML at NMAMIT | <a href="https://drive.google.com/file/d/12OX3JI-_dWm8LSoqs2CV-sXlUh1Q24Dh/view?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</a></p>
+                    <p className="text-sm max-w-xl ">Pursuing a B.Tech in AI&ML at NMAMIT | <a href="https://drive.google.com/file/d/12OX3JI-_dWm8LSoqs2CV-sXlUh1Q24Dh/view?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</a></p>
                 </div>
             </div>
             <div>
-                <hr className="w-48 h-1 mx-auto my-4 bg-gray-200 border-0 rounded md:my-10 dark:bg-gray-700 mt-20   "></hr>
+                <hr className="w-48 h-1 mx-auto  bg-gray-300  border-0 rounded dark:bg-gray-800 my-20"></hr>
             </div>
         </>
     );

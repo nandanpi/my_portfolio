@@ -3,7 +3,7 @@ import {Route,Routes} from "react-router-dom";
 import Contact from "./components/contact";
 import Work from "./components/work";
 import Timeline from "./components/timeline";
-
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/timeline" element={<Timeline />}></Route>
       </Routes>
+        <Footer />
     </>
   );
 }
