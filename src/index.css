@@ -17,7 +17,6 @@ code {
 }
 
 .type2{
-  border-right: 5px solid black;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s steps(20), blink .5s step-end infinite alternate;

@@ -4,13 +4,13 @@ import "../index.css"
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 
 const Navbar = () => {
-    const [nav,setNav] = useState(false)
+    const [nav,setNav] = useState(true)
     const handleNav = () => {
         setNav(!nav)
     }
     return (
         <>
-        <div className="dark:bg-black bg-white  border-b-2 border-b-gray-400 dark:border-b-gray-400 ">
+        <div className="dark:bg-black bg-white  border-b-2 border-b-gray-400 dark:border-b-gray-400 border-opacity-50 ">
             <div className="hidden md:flex justify-evenly">
                 <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpi</a></h1></div>
                 <div className="justify-center">
@@ -26,12 +26,12 @@ const Navbar = () => {
             <div>
                 <div className="dark:bg-black bg-white  border-b-2 border-b-gray-400 dark:border-b-gray-400 flex justify-evenly md:hidden">
                     <div className="p-4">
-                        <div onClick={handleNav} className="md:hidden bg-white rounded-[2px] w-fit h-fit">
-                            {!nav ? <AiOutlineClose size={30}/>:<AiOutlineMenu size={30} />}
+                        <div onClick={handleNav}>
+                            {!nav ? <AiOutlineClose className="text-black dark:text-white" size={30}/>:<AiOutlineMenu className="text-black dark:text-white" size={30} />}
                         </div>
                     </div>
                     <div><h1 className="text-black dark:text-white font-bold text-2xl  flex md:hidden p-3"><a href="/">nandanpi</a></h1></div>
-                    <div className={!nav ? ' w-full absolute mt-20 bg-white dark:bg-black duration-500 ease-in':'bg-white dark:bg-black ease-out duration-700 fixed top-[-100%]'}>
+                    <div className={!nav ? ' w-full absolute mt-20 bg-white dark:bg-black ':'bg-white dark:bg-black fixed top-[-100%]'}>
                         <ul className=" uppercase text-black dark:text-white text-center">
                             <li className="p-4 text-teal dark:text-blue"><a href="/">Work</a></li>
                             <li className="p-4 text-teal dark:text-blue"><a href="/timeline">Timeline</a></li>
