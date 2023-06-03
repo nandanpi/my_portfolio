@@ -24,21 +24,25 @@ const Navbar = () => {
             </div>
         </div>
             <div>
-                <div className="dark:bg-black bg-white  border-b-2 border-b-gray-400 dark:border-b-gray-400 flex justify-evenly md:hidden">
-                    <div className="p-4">
-                        <div onClick={handleNav}>
-                            {!nav ? <AiOutlineClose className="text-black dark:text-white" size={30}/>:<AiOutlineMenu className="text-black dark:text-white" size={30} />}
+                <div className="dark:bg-black bg-white  border-b-2 border-b-gray-400 dark:border-b-gray-400 flex justify-evenly md:hidden flex-col">
+                    <div className="flex justify-evenly">
+                        <div className="p-4">
+                            <div onClick={handleNav}>
+                                {!nav ? <AiOutlineClose className="text-black dark:text-white" size={30}/>:<AiOutlineMenu className="text-black dark:text-white" size={30} />}
+                            </div>
+                        </div>
+                        <div><h1 className="text-black dark:text-white font-bold text-2xl  flex md:hidden p-3"><a href="/">nandanpi</a></h1></div>
+                        <div className=" md:hidden flex p-4"><Switcher /></div>
+                    </div>
+                    <div className={!nav ? "block" : "hidden" }>
+                        <div className="m-2 border-2 rounded-xl">
+                            <ul className="text-black dark:text-white capitalize p-3 text-center space-y-4">
+                                <li><a href="/">Work</a></li>
+                                <li><a href="/timeline">Timeline</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div><h1 className="text-black dark:text-white font-bold text-2xl  flex md:hidden p-3"><a href="/">nandanpi</a></h1></div>
-                    <div className={!nav ? ' w-full absolute mt-20 bg-white dark:bg-black ':'bg-white dark:bg-black fixed top-[-100%]'}>
-                        <ul className=" uppercase text-black dark:text-white text-center">
-                            <li className="p-4 text-teal dark:text-blue"><a href="/">Work</a></li>
-                            <li className="p-4 text-teal dark:text-blue"><a href="/timeline">Timeline</a></li>
-                            <li className="p-4 text-teal dark:text-blue"><a href="/contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div className=" md:hidden flex p-4"><Switcher /></div>
                 </div>
             </div>
 
