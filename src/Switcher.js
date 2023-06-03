@@ -14,7 +14,7 @@ setDarkSide(checked);
 return (
 <>
 <div>
-<DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={25} />
+<DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={28} />
 </div>
 </>
 );
