@@ -11,7 +11,7 @@ const Work = () => {
                     </div>
                 </div>
                 <div className="hidden md:block">
-                    <p className="text-center text-3xl text-black dark:text-white font-bold  ">Student and Web Developer.</p>
+                    <p className="text-center text-3xl text-black dark:text-white font-bold  ">A Student and Web Developer.</p>
                 </div>
                 <div className="hidden justify-center items-center text-center font-bold text-gray-600 dark:text-white md:flex">
                     <p className="text-xl max-w-xl mb-10">Pursuing a B.Tech in AI&ML at NMAMIT | <a href="https://drive.google.com/file/d/12OX3JI-_dWm8LSoqs2CV-sXlUh1Q24Dh/view?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</a></p>
@@ -34,6 +34,7 @@ const Work = () => {
             <div>
                 <hr className="w-48 h-1 mx-auto  bg-gray-300  border-0 rounded dark:bg-gray-800 my-20"></hr>
             </div>
+            <div className="flex justify-center items-center"><p className="text-3xl text-black dark:text-white font-bold md:text-6xl">My Work</p></div>
         </>
     );
 }
