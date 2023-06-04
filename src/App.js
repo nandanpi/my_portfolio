@@ -10,14 +10,13 @@ import Err404 from "./components/err404";
 function App() {
   return (
     <>
-      <Navbar />
+
       <Routes>
-        <Route path="/" element={<Work />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/timeline" element={<Timeline />}></Route>
+        <Route path="/" element={<><Navbar /><Work /><Footer /></>}></Route>
+        <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>}></Route>
+        <Route path="/timeline" element={<><Navbar /><Timeline /><Footer /></>}></Route>
         <Route path="*" element={<Err404 />}></Route>
       </Routes>
-        <Footer />
     </>
   );
 }
