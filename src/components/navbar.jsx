@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <>
         <div className="sticky z-[9999999] w-full top-0 bg-transparent">
-            <div className="dark:bg-black bg-white  border-b border-gray-400 dark:border-gray-400 shadow-xl backdrop-filter backdrop-blur-lg dark:backdrop-blur-lg bg-opacity-30 dark:bg-opacity-20">
+            <div className="dark:bg-black bg-white  border-b border-gray-400 dark:border-gray-400 shadow-xl dark:shadow-lg backdrop-filter backdrop-blur-lg dark:backdrop-blur-lg bg-opacity-30 dark:bg-opacity-20">
                 <div className="hidden md:flex justify-evenly">
                     <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpai</a></h1></div>
                     <div className="justify-center">
