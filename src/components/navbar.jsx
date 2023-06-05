@@ -2,22 +2,23 @@ import React,{useState} from "react";
 import Switcher from "../Switcher";
 import "../index.css"
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
+import {HashLink} from "react-router-hash-link";
 
 const Navbar = () => {
     const [nav,setNav] = useState(true)
     const handleNav = () => {
         setNav(!nav)
     }
-    function scrollToDiv() {
-        let targetDiv = document.getElementById('work');
-       if(window.location.pathname === "/"){
-           targetDiv.scrollIntoView({ behavior: 'smooth' });
-       }
-       else{
-           window.location.pathname = "/";
-           targetDiv.scrollIntoView({ behavior: 'smooth' });
-       }
-    }
+    // function scrollToDiv() {
+    //     let targetDiv = document.getElementById('work');
+    //    if(window.location.pathname === "/"){
+    //        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    //    }
+    //    else{
+    //        window.location.pathname = "/";
+    //        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    //    }
+    // }
     return (
         <>
         <div className="fixed w-full top-0">
@@ -26,7 +27,7 @@ const Navbar = () => {
                     <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpai</a></h1></div>
                     <div className="justify-center">
                         <ul className="text-black dark:text-white flex text-xl font-bold space-x-6 p-4">
-                            <li onClick={scrollToDiv} className="cursor-pointer">Work</li>
+                            <HashLink smooth to="/#work">Work</HashLink>
                             <li><a href="/timeline">Timeline</a></li>
                             <li><a href="/contact">Contact</a></li>
                         </ul>
@@ -48,7 +49,7 @@ const Navbar = () => {
                     <div className={!nav ? "block p-2" : "hidden" }>
                         <div className="m-2 border-2 rounded-xl">
                             <ul className="text-black dark:text-white p-3 text-center space-y-4 text-xl ">
-                                <li onClick={scrollToDiv}><a href="/">Work</a></li>
+                                <HashLink smooth to="/#work">Work</HashLink>
                                 <li><a href="/timeline">Timeline</a></li>
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
