@@ -1,5 +1,5 @@
 import React from "react";
-import sb_image from "../img/sb_image.jpg"
+import sb_image from "../assets/img/sb_image.jpg"
 const Work = () => {
     return (
         <>

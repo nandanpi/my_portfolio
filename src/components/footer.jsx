@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <div className="pt-12 bottom-0">
-                <div className="pt-12">
+                <div className="pt-7">
                     <div>
                         <ul className="flex justify-center space-x-6">
                             <li className="bg-gray-300 dark:bg-gray-800 text-black dark:text-white rounded-3xl p-2 hover:scale-110"><a
