@@ -9,20 +9,10 @@ const Navbar = () => {
     const handleNav = () => {
         setNav(!nav)
     }
-    // function scrollToDiv() {
-    //     let targetDiv = document.getElementById('work');
-    //    if(window.location.pathname === "/"){
-    //        targetDiv.scrollIntoView({ behavior: 'smooth' });
-    //    }
-    //    else{
-    //        window.location.pathname = "/";
-    //        targetDiv.scrollIntoView({ behavior: 'smooth' });
-    //    }
-    // }
     return (
         <>
-        <div className="fixed w-full top-0">
-            <div className="dark:bg-black bg-white  border-b border-gray-400 dark:border-gray-400 shadow-xl">
+        <div className="sticky z-[9999999] w-full top-0 bg-transparent">
+            <div className="dark:bg-black bg-white  border-b border-gray-400 dark:border-gray-400 shadow-xl backdrop-filter backdrop-blur-lg dark:backdrop-blur-lg bg-opacity-30 dark:bg-opacity-20">
                 <div className="hidden md:flex justify-evenly">
                     <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpai</a></h1></div>
                     <div className="justify-center">
@@ -36,7 +26,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div>
-                <div className="dark:bg-black bg-white  border-b-2 border-b-gray-400 dark:border-b-gray-400 flex justify-evenly md:hidden flex-col">
+                <div className="dark:bg-black bg-white  border-b-2 border-b-gray-400 dark:border-b-gray-400 flex justify-evenly md:hidden flex-col backdrop-filter backdrop-blur-lg dark:backdrop-blur-lg bg-opacity-30 dark:bg-opacity-20">
                     <div className="flex justify-evenly">
                         <div className="p-4">
                             <div onClick={handleNav}>
@@ -58,7 +48,6 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-
         </>
     );
 }
