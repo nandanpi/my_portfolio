@@ -39,14 +39,28 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center"><p className="text-3xl text-black dark:text-white font-bold md:text-6xl">My Work</p></div>
-            <div className="grid grid-cols-1 md:grid-cols-3 mx-12 mt-20">
-                <a href="https://sahayata-bharath.vercel.app/" target="_blank" rel="noreferrer" className="bg-gray-400 dark:bg-gray-700 rounded-xl space-y-3 pb-3 hover:scale-110 duration-200 hover:shadow-xl scale-100  "><img src={sb_image} alt="project_preview" className="rounded-t-xl" />
+            <div className="flex justify-center items-center"><p className="text-3xl text-black dark:text-white font-bold md:text-6xl" id="work">My Work</p></div>
+            <div className="grid grid-cols-1 md:grid-cols-3 mx-12 mt-20 ">
+                <a href="https://sahayata-bharath.vercel.app/" target="_blank" rel="noreferrer" className="bg-gray-400 dark:bg-gray-700 rounded-xl space-y-3 pb-3 hover:scale-110 duration-200 hover:shadow-xl scale-100 my-5 md:mx-5"><img src={sb_image} alt="project_preview" className="rounded-t-xl" />
                 <p className="text-black dark:text-white p-2 space-x-2 justify-center items-center flex">
                     <span className="border-2 rounded-md  p-1">ReactJS</span>
                     {/*<span className="border-2 rounded-md  p-1">HTML5</span>*/}
                     <span className="border-2 rounded-md  p-1">TailwindCSS</span>
                 </p>
+                </a>
+                <a href="https://sahayata-bharath.vercel.app/" target="_blank" rel="noreferrer" className="bg-gray-400 dark:bg-gray-700 rounded-xl space-y-3 pb-3 hover:scale-110 duration-200 hover:shadow-xl scale-100  my-5 md:mx-5"><img src={sb_image} alt="project_preview" className="rounded-t-xl" />
+                    <p className="text-black dark:text-white p-2 space-x-2 justify-center items-center flex">
+                        <span className="border-2 rounded-md  p-1">ReactJS</span>
+                        {/*<span className="border-2 rounded-md  p-1">HTML5</span>*/}
+                        <span className="border-2 rounded-md  p-1">TailwindCSS</span>
+                    </p>
+                </a>
+                <a href="https://sahayata-bharath.vercel.app/" target="_blank" rel="noreferrer" className="bg-gray-400 dark:bg-gray-700 rounded-xl space-y-3 pb-3 hover:scale-110 duration-200 hover:shadow-xl scale-100  my-5 md:mx-5"><img src={sb_image} alt="project_preview" className="rounded-t-xl" />
+                    <p className="text-black dark:text-white p-2 space-x-2 justify-center items-center flex">
+                        <span className="border-2 rounded-md  p-1">ReactJS</span>
+                        {/*<span className="border-2 rounded-md  p-1">HTML5</span>*/}
+                        <span className="border-2 rounded-md  p-1">TailwindCSS</span>
+                    </p>
                 </a>
             </div>
         </>

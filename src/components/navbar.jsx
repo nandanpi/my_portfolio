@@ -8,15 +8,25 @@ const Navbar = () => {
     const handleNav = () => {
         setNav(!nav)
     }
+    function scrollToDiv() {
+        let targetDiv = document.getElementById('work');
+       if(window.location.pathname === "/"){
+           targetDiv.scrollIntoView({ behavior: 'smooth' });
+       }
+       else{
+           window.location.pathname = "/";
+           targetDiv.scrollIntoView({ behavior: 'smooth' });
+       }
+    }
     return (
         <>
-        <div className="fixed w-full top-0 ">
+        <div className="fixed w-full top-0">
             <div className="dark:bg-black bg-white  border-b border-gray-400 dark:border-gray-400 shadow-xl">
                 <div className="hidden md:flex justify-evenly">
                     <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpai</a></h1></div>
                     <div className="justify-center">
                         <ul className="text-black dark:text-white flex text-xl font-bold space-x-6 p-4">
-                            <li><a href="/">Work</a></li>
+                            <li onClick={scrollToDiv} className="cursor-pointer">Work</li>
                             <li><a href="/timeline">Timeline</a></li>
                             <li><a href="/contact">Contact</a></li>
                         </ul>
@@ -38,7 +48,7 @@ const Navbar = () => {
                     <div className={!nav ? "block p-2" : "hidden" }>
                         <div className="m-2 border-2 rounded-xl">
                             <ul className="text-black dark:text-white p-3 text-center space-y-4 text-xl ">
-                                <li><a href="/">Work</a></li>
+                                <li onClick={scrollToDiv}><a href="/">Work</a></li>
                                 <li><a href="/timeline">Timeline</a></li>
                                 <li><a href="/contact">Contact</a></li>
                             </ul>

@@ -2,7 +2,7 @@ import React from "react";
 const Timeline = () => {
     return (
         <>
-            <div className="flex justify-center">
+            <div className="flex justify-evenly my-[110px]">
                 <div className="flex justify-center p-8 flex-col space-y-3">
                     <p className="text-black dark:text-white text-2xl font-bold">Timeline</p>
                     <div>
