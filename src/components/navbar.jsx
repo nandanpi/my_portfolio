@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="sticky z-[9999999] w-full top-0 bg-transparent">
             <div className="dark:bg-black bg-white  border-b border-gray-400 dark:border-gray-400 shadow-xl dark:shadow-lg backdrop-filter backdrop-blur-lg dark:backdrop-blur-lg bg-opacity-30 dark:bg-opacity-20">
                 <div className="hidden md:flex justify-evenly">
-                    <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><a href="/">nandanpai</a></h1></div>
+                    <div><h1 className="text-black dark:text-white font-bold text-2xl p-3"><Link to="/">nandanpai</Link></h1></div>
                     <div className="justify-center">
                         <ul className="text-black dark:text-white flex text-xl font-bold space-x-6 p-4">
                             <li><HashLink smooth to="/#work">Work</HashLink></li>
@@ -35,7 +35,7 @@ const Navbar = () => {
                                 {!nav ? <AiOutlineClose className="text-black dark:text-white" size={30}/>:<AiOutlineMenu className="text-black dark:text-white" size={30} />}
                             </div>
                         </div>
-                        <div><h1 className="text-black dark:text-white font-bold text-2xl  flex md:hidden p-3"><a href="/">nandanpai</a></h1></div>
+                        <div><h1 className="text-black dark:text-white font-bold text-2xl  flex md:hidden p-3"><Link to="/">nandanpai</Link></h1></div>
                         <div className=" md:hidden flex p-4"><Switcher /></div>
                     </div>
                     <div className={!nav ? "block p-2" : "hidden" }>

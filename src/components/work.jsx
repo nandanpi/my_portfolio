@@ -1,5 +1,6 @@
 import React from "react";
 import sb_image from "../assets/img/sb_image.jpg"
+import {Link} from "react-router-dom";
 const Work = () => {
     return (
         <>
@@ -16,7 +17,7 @@ const Work = () => {
                         <p className="text-center text-3xl text-black dark:text-white font-bold  ">A Student and Web Developer.</p>
                     </div>
                     <div className="hidden justify-center items-center text-center font-bold text-gray-600 dark:text-white md:flex">
-                        <p className="text-xl max-w-xl mb-10">Pursuing a B.Tech in AI&ML at NMAMIT | <a href="https://drive.google.com/file/d/12OX3JI-_dWm8LSoqs2CV-sXlUh1Q24Dh/view?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</a></p>
+                        <p className="text-xl max-w-xl mb-10">Pursuing a B.Tech in AI&ML at NMAMIT | <Link to="/Resume" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</Link></p>
                     </div>
                 </div>
                 <div className="mt-20">
@@ -31,7 +32,7 @@ const Work = () => {
                             <p className="text-center text-xl text-black dark:text-white font-bold  ">A Student and Web Developer.</p>
                         </div>
                         <div className=" justify-center items-center text-center font-bold text-gray-600 dark:text-white flex md:hidden m-3">
-                            <p className="text-sm max-w-xl ">Pursuing a B.Tech in AI&ML at NMAMIT | <a href="https://drive.google.com/file/d/12OX3JI-_dWm8LSoqs2CV-sXlUh1Q24Dh/view?usp=sharing" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</a></p>
+                            <p className="text-sm max-w-xl ">Pursuing a B.Tech in AI&ML at NMAMIT | <Link to="/Resume" className="text-blue-500" target="_blank" rel="noreferrer">My Resume</Link></p>
                         </div>
                     </div>
                     <div>
