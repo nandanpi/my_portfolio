@@ -2,6 +2,7 @@ import React from "react";
 import sb_image from "../assets/img/sb_image.jpg";
 import {Link} from "react-router-dom";
 import pomodorly_banner from "../assets/img/pomodorly_banner.jpg";
+import staticnova from "../assets/img/staticnova_banner.png";
 const Work = () => {
     return (
         <>
@@ -50,6 +51,12 @@ const Work = () => {
                 </p>
                 </a>
                 <a href="https://pomodorly.vercel.app/" target="_blank" rel="noreferrer" className="bg-gray-400 dark:bg-gray-700 rounded-xl space-y-3 pb-3 hover:scale-110 duration-200 hover:shadow-xl scale-100 my-5 md:mx-5"><img src={pomodorly_banner} alt="project_preview" className="rounded-t-xl" />
+                    <p className="text-black dark:text-white p-2 space-x-2 justify-center items-center flex">
+                        <span className="border-2 rounded-md  p-1">ReactJS</span>
+                        <span className="border-2 rounded-md  p-1">TailwindCSS</span>
+                    </p>
+                </a>
+                <a href="https://staticnova.vercel.app/" target="_blank" rel="noreferrer" className="bg-gray-400 dark:bg-gray-700 rounded-xl space-y-3 pb-3 hover:scale-110 duration-200 hover:shadow-xl scale-100 my-5 md:mx-5"><img src={staticnova} alt="project_preview" className="rounded-t-xl" />
                     <p className="text-black dark:text-white p-2 space-x-2 justify-center items-center flex">
                         <span className="border-2 rounded-md  p-1">ReactJS</span>
                         <span className="border-2 rounded-md  p-1">TailwindCSS</span>
